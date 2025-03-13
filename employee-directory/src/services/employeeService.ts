@@ -255,7 +255,7 @@ export const getEmployeeById = (id: number): Promise<Employee | undefined> => {
     setTimeout(() => {
       const employee = mockEmployees.find(emp => emp.id === id);
       resolve(employee);
-    }, 1000);
+    }, Math.random() * (4000 - 500 + 1) + 500);
   });
 };
 
@@ -290,6 +290,6 @@ export const filterEmployees = (filter: EmployeeFilter): Promise<Employee[]> => 
       }
       
       resolve(filteredEmployees);
-    }, 1000);
+    }, Math.floor(Math.random() * (4000 - 500 + 1)) + 500  ); // Simulate network delay with a random number between 500 and 4000 ms
   });
 };
