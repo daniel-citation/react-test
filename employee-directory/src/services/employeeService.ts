@@ -266,7 +266,7 @@ export const filterEmployees = (filter: EmployeeFilter): Promise<Employee[]> => 
     setTimeout(() => {
       let filteredEmployees = [...mockEmployees];
       
-      // Filter by name (inefficient string operations)
+      // Filter by name 
       if (filter.name) {
         const searchName = filter.name.toLowerCase();
         filteredEmployees = filteredEmployees.filter(employee => {
