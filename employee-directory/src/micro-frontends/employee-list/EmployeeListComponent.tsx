@@ -37,7 +37,6 @@ const EmployeeListComponent: React.FC = () => {
   
   // Handle employee selection
   const handleEmployeeSelect = useCallback((employeeId: number) => {
-    // Should be: setSelectedEmployeeId(employeeId);
     setSelectedEmployeeId(prevId => prevId === employeeId ? null : employeeId);
     
     // Publish employee selected event
