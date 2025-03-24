@@ -59,10 +59,12 @@ npm test
 This application has several issues that need to be fixed. Your task is to identify and fix these problems:
 
 1. The list of employees constantly reloads and flickers, especially when interacting with the search filters
-2. The application becomes slower the longer it runs and consumes increasing amounts of memory
-3. Sometimes the application crashes with type errors when trying to access employee properties after loading or filtering employees
-4. Changes in the search filters don't always update the employee list correctly
-5. The application becomes very slow when filtering through many employees
+2. The application becomes very slow when filtering through many employees
+3. The application becomes slower the longer it runs and consumes increasing amounts of memory
+
+
+4. Sometimes the application crashes with type errors when trying to access employee properties after loading or filtering employees
+5. Changes in the search filters don't always update the employee list correctly
 6. Sometimes clicking on an employee doesn't show their details or selects the wrong employee
 7. Several tests are failing and there's missing test coverage for critical features
 
